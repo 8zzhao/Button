@@ -92,17 +92,25 @@
 
         //function 3
 
-        //function 4
+        function fish(){
+          
+        }//function 4
 
         function plusOne(){
-            let v = doc.querySelector('#bb5 > div > content');
-            if (v.clicked.plusOne == true){
-                v++;
-            }
-
+          const doc = document;
+          let box = doc.querySelector('#bb5');
+          let value = box.querySelector('span').innerHTML;
+          //console.log(value);
+          value = Number(value) +1;
+          box.querySelector('span').innerHTML = value;
         }
         function plusTen(){
-
+          const doc = document;
+          let box = doc.querySelector('#bb5');
+          let value = box.querySelector('span').innerHTML;
+          //console.log(value);
+          value = Number(value) +10;
+          box.querySelector('span').innerHTML = value;
         }//function 5 & 6
     </script>
 </html>
