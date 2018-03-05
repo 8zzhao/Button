@@ -37,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <button onclick="">The Family Blood Line</button>
+            <button onclick="fc()">The Family Blood Line</button>
         </section>
 
         <section id="bb4" class="bigbox">
@@ -52,7 +52,7 @@
                     <li class="fish">blue fish</li>
                 </ul>
             </div>
-            <button onclick="">Technicolor Fish</button>
+            <button onclick="fish()">Technicolor Fish</button>
         </section>
 
         <section id="bb5" class="bigbox">
@@ -89,20 +89,33 @@
         }
 
         //function 2
-
+        function fc(){
+             const doc = document;
+             let grand = doc.querySelector('.gp');
+             let parent = doc.querySelector('.p');
+             let son = doc.querySelectorAll('.c');
+             grand.style.backgroundColor = '#550000';
+             parent.style.backgroundColor = '#991100';
+             son[0].style.backgroundColor = '#dd1111';
+             son[1].style.backgroundColor = '#dd1111';
+       }
         //function 3
 
         function fish(){
-          
+             const doc = document;
+             let flatIsLife = doc.querySelectorAll('.fish');
+             flatIsLife[2].style.color = 'red';
+             flatIsLife[3].style.color = 'blue';
+
         }//function 4
 
         function plusOne(){
           const doc = document;
-          let box = doc.querySelector('#bb5');
-          let value = box.querySelector('span').innerHTML;
+          let myBuddyJoseHasAFlatHead = doc.querySelector('#bb5');
+          let value = myBuddyJoseHasAFlatHead.querySelector('span').innerHTML;
           //console.log(value);
           value = Number(value) +1;
-          box.querySelector('span').innerHTML = value;
+          myBuddyJoseHasAFlatHead.querySelector('span').innerHTML = value;
         }
         function plusTen(){
           const doc = document;
